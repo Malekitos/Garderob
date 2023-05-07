@@ -91,47 +91,45 @@ public class atteluParadisana : MonoBehaviour {
     public void mainitLielimuBikses()
     {
         float pasreizejaVartiba = izmSlaidersBikses.GetComponent<Slider>().value;
-        bikses1.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        bikses2.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        bikses3.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        bikses4.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-
+        bikses1.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        bikses2.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        bikses3.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        bikses4.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
     }
+
 
     public void mainitLielimuApavi()
     {
         float pasreizejaVartiba = izmSlaidersApavi.GetComponent<Slider>().value;
-        apavi1.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        apavi2.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        apavi3.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
+        apavi1.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        apavi2.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        apavi3.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        
     }
 
     public void mainitLielimuKrekli()
     {
         float pasreizejaVartiba = izmSlaiderskrekli.GetComponent<Slider>().value;
-        krekli1.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        krekli2.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        krekli3.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        krekli4.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
+        krekli1.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        krekli2.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        krekli3.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        krekli4.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
     }
 
     public void mainitLielimuMates()
     {
         float pasreizejaVartiba = izmSlaidersMati.GetComponent<Slider>().value;
-        mati1.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        mati2.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        mati3.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
-        mati4.transform.localScale = new Vector2(1f * pasreizejaVartiba, 1f * pasreizejaVartiba);
+        mati1.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        mati2.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        mati3.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
+        mati4.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba, pasreizejaVartiba);
     }
 
-    public void mainitBiezumu() {
+    public void mainitCilveku() {
         float pasreizejaVartiba = biezumuSlaiders.GetComponent<Slider>().value;
-        mainigaAttels.transform.localScale = new Vector2(1f, 1f * pasreizejaVartiba);
+        float pasreizejaVartiba2 = platumuSlaiders.GetComponent<Slider>().value;
+        mainigaAttels.transform.localScale = new Vector3(pasreizejaVartiba, pasreizejaVartiba2,1);
     }
 
-    public void mainitPlatumu()
-    {
-        float pasreizejaVartiba = platumuSlaiders.GetComponent<Slider>().value;
-        mainigaAttels.transform.localScale = new Vector2(1f* pasreizejaVartiba, 1f);
-    }
+   
 }
