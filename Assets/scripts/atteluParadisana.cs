@@ -45,7 +45,7 @@ public class atteluParadisana : MonoBehaviour {
         bikses3.SetActive(vertiba);
         bikses4.SetActive(vertiba);
 
-        izmSlaidersBikses.GetComponent<Toggle>().interactable = vertiba;
+        izmSlaidersBikses.GetComponent<Slider>().interactable = vertiba;
 
     }
     public void MatuAttelosana(bool vertiba)
@@ -55,7 +55,7 @@ public class atteluParadisana : MonoBehaviour {
         mati3.SetActive(vertiba);
         mati4.SetActive(vertiba);
 
-        izmSlaidersMati.GetComponent<Toggle>().interactable = vertiba;
+        izmSlaidersMati.GetComponent<Slider>().interactable = vertiba;
     }
     public void ApavuAttelsana(bool vertiba)
     {
@@ -63,7 +63,7 @@ public class atteluParadisana : MonoBehaviour {
         apavi2.SetActive(vertiba);
         apavi3.SetActive(vertiba);
 
-        izmSlaidersApavi.GetComponent<Toggle>().interactable = vertiba;
+        izmSlaidersApavi.GetComponent<Slider>().interactable = vertiba;
     }
     public void KrekluAttelosana(bool vertiba)
     {
@@ -72,7 +72,7 @@ public class atteluParadisana : MonoBehaviour {
         krekli3.SetActive(vertiba);
         krekli4.SetActive(vertiba);
 
-        izmSlaiderskrekli.GetComponent<Toggle>().interactable = vertiba;
+        izmSlaiderskrekli.GetComponent<Slider>().interactable = vertiba;
     }
 
     public void Izkritosais(int skaitlis)
